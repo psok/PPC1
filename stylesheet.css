@@ -1,0 +1,159 @@
+body  {
+			background-color: #669999;
+			font-family: arial, verdana;
+			width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+}
+
+#wrapper {
+			background-color: #ffffff;
+			width: 960px;
+			
+			
+}
+
+header  {
+			background-image: url("images/bannerimage.jpg");
+			background-position: left top;
+			width: auto;
+			height: 150px;
+			color: #ffffff;
+			padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+nav li {
+    float: left;
+}
+
+nav a:link, a:visited {
+    display: block;
+    width: 150px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover, a:active {
+    background-color: #669999;
+}
+
+
+table		{ 
+				border-collapse: collapse;
+				color: #000000;
+				
+			}	
+
+td {
+	text-align: left;
+	width: 300px;
+	padding: 20px 10px 10px 10px;
+	
+}								
+
+
+
+
+#search		{
+				background-color: #4c4c4c;
+				color: #ffffff;
+				padding: 10px;
+				margin: 10px;
+				
+				
+}	
+
+#welcome	{
+				
+				
+				padding: 10px;
+				margin: 10px;
+				
+				
+}
+
+#new		{
+				
+				
+				padding: 10px;
+				margin: 10px;
+				
+}	
+
+#new a:link, #new a:visited {
+			
+			color: #0000cc;
+
+}			
+    
+
+#poeticdevice {
+				background-color: #009999;
+				}
+
+
+footer			{
+			background-color: #4c4c4c;
+			width: auto;
+			height: 100px;
+			color: #ffffff;
+			text-align: center;
+			padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer li {
+    float: left;
+}
+
+footer a:link, footer a:visited {
+    display: block;
+    width: 140px;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding:5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer a:hover, footer a:active {
+    background-color: #669999;
+}
+
+
+.carousel-wrapper {
+    max-width: 620px;
+    max-height: 200px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+.slide1_container {
+		position: relative; 
+		top: 0px; 
+		left: 0px; 
+		width: 600px;
+        height: 300px;
+        }			
+
+			

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Poetry and Place: Chicago</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="searchstyle.css">
+<link rel='stylesheet' type='text/css' href='css/basic.css' media='screen' />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="modal/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="modal/jquery.modal.css" type="text/css" media="screen" />
+<script>
+	$(function(){
+    $('#bykeyword').on('click', function(){
+    	//console.log("getresult.php?q=" + $('#keyword').val());
+        $.ajax({
+            url: "getresult.php?q=" + $('#keyword').val() + "&searchby=keyword",
+            success:function(d){
+                $('#result').html(d);
+            }
+        });
+
+    });
+
+    $('#byauthor').on('change', function(){
+    	if($('#byauthor').val() != 'select') {
+    		console.log("getresult.php?q=" + $('#byauthor').val() + "&searchby=author");
+	        $.ajax({
+	            url: "getresult.php?q=" + $('#byauthor').val() + "&searchby=author",
+	            success:function(d){
+	                $('#result').html(d);
+	            }
+	        });
+    	}
+
+    });
+
+    $('#bytitle').on('change', function(){
+    	if($('#bytitle').val() != 'select') {
+    		console.log("getresult.php?q=" + $('#bytitle').val() + "&searchby=title");
+	        $.ajax({
+	            url: "getresult.php?q=" + $('#bytitle').val() + "&searchby=title",
+	            success:function(d){
+	                $('#result').html(d);
+	            }
+	        });
+	    }
+    });
+
+    
+    /*Handle Click*/
+    $('#result').on('click', function(e){
+      if (e.target.tagName === "A"){
+            var $el = $(e.target);
+            var href = $el.attr('href');
+            console.log(href);
+            var selector = "a[href='"+href+"']";
+	            e.preventDefault();
+              	$(selector).modal({
+                	fadeDuration: 250,
+                	showClose: false
+	            });
+      
+        }
+    });
+});
+
+</script>
+</head>
+<body>
+	<header>
+		<h1>Poetry and Place</h1>
+		<h2>Chicago Through the Poet's Words</h2>	
+		
+	</header>
+	
+<div id="wrapper">	
+		<nav>
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="search.html">Search</a></li>
+			<li><a href="map.html">Maps</a></li>
+			<li><a href="album/gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+<article>
+<h2>Search </h2>
+<p>Poetry and Place: Chicago (PPC) is a digital repository that allows you to search and browse for poets,
+ their respective poetry, and the locative elements that are the subjects of their works.
+ </p>
+</article>	
+	
+<section id="about">
+	<table>
+		<tbody>
+			<tr>
+				<td><h2>SEARCH</h2></td>
+				<td><h2>BROWSE POETS</h2></td>
+				<td><h2>BROWSE POEMS</h2></td>
+			</tr>
+			<tr>
+				<td class="description"><form class="search_form" name="search" method="get"><input type="hidden" name="node" value="search"><input type="text" name="query" id="keyword"><input type="button" value="search" id="bykeyword"></form>
+				</td>
+				<td class="description"><form action="browse">
+						<select name="authors" id="byauthor">
+							<option selected value="select">Select poet:</option> 
+							<option value="1">Carl Sandburg</option> 
+							<option value="2">Frank Marshall Davis</option>
+							<option value="3">Marge Piercy</option>
+							<option value="4">Brenda Cardenas</option>
+							<option value="5">Lew Welch</option>
+							<option value="6">Phillip B. Williams</option>
+							<option value="7">Gwendolyn Brooks</option>
+							<option value="8">Marianne Boruch</option>	 
+						</select>
+						</form>
+					</td>
+				<td class="description"><form action="browse">
+						<select name="titles" id="bytitle">
+							<option selected value="select">Select poem:</option> 
+							<option value="1">"Chicago"</option>
+							<option value="2">"Chicago's Congo"</option>
+							<option value="3">"Visiting a dead man on a summer day"</option>
+							<option value="4">"At the Base..."</a></option>
+							<option value="5">"Chicago Poem"</option>
+							<option value="6">"Homan and Chicago Ave."</option>
+							<option value="7">"kitchenette building"</option>
+							<option value="8">"Little Wife"</option>
+							<option value="9">"We Real Cool"</option> 
+						</select>
+						</form>
+					
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+</section>		
+<div id="result"></div>
+<footer>		
+	<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="search.html">Search</a></li>
+			<li><a href="map.html">Maps</a></li>
+			<li><a href="album/gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			
+		</ul>
+		</ul>
+						<p>Copyright © PPC 2014. All rights reserved.</p>	
+									
+</footer>
+</div>
+
+</body>	
+</html>
+		
+	

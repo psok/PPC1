@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Poetry and Place</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+  <script type="text/javascript" src="third.party/jquery-1.7.1.min.js"></script>
+                                                                             
+  <link href="css/nanogallery.css" rel="stylesheet" type="text/css">
+                                                                                                              
+  <script type="text/javascript" src="jquery.nanogallery.js"></script>
+
+  <script type="text/javascript" src="jquery.nanogallerydemo.js"></script> 
+
+
+  <script>
+    $(document).ready(function () {
+ 
+    var contentGalleryMLN=[
+
+        { src: 'demonstration/bronzeville/image_01.jpg', srct: 'demonstration/bronzeville/image_01ts.jpg', title: 'Bronzeville',
+          ID:103, kind:'album' },
+        { src: 'demonstration/bronzeville/image_01.jpg', srct: 'demonstration/bronzeville/image_01ts.jpg', title: 'image 01',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_02.jpg', srct: 'demonstration/bronzeville/image_02ts.jpg', title: 'image 02',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_03.jpg', srct: 'demonstration/bronzeville/image_03ts.jpg', title: 'image 03',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_04.jpg', srct: 'demonstration/bronzeville/image_04ts.jpg', title: 'image 04',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_05.jpg', srct: 'demonstration/bronzeville/image_05ts.jpg', title: 'image 05',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_06.jpg', srct: 'demonstration/bronzeville/image_06ts.jpg', title: 'image 06',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_07.jpg', srct: 'demonstration/bronzeville/image_07ts.jpg', title: 'image 07',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_08.jpg', srct: 'demonstration/bronzeville/image_08ts.jpg', title: 'image 08',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_09.jpg', srct: 'demonstration/bronzeville/image_09ts.jpg', title: 'image 09',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_10.jpg', srct: 'demonstration/bronzeville/image_10ts.jpg', title: 'image 10',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_11.jpg', srct: 'demonstration/bronzeville/image_11ts.jpg', title: 'image 11',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_12.jpg', srct: 'demonstration/bronzeville/image_12ts.jpg', title: 'image 12',
+          albumID:103 },
+        { src: 'demonstration/bronzeville/image_13.jpg', srct: 'demonstration/bronzeville/image_13ts.jpg', title: 'image 13',
+          albumID:103 },
+          { src: 'demonstration/graceland/image_01.jpg', srct: 'demonstration/graceland/image_01ts.jpg', title: 'Graceland',
+          ID:104, kind:'album' },
+        { src: 'demonstration/graceland/image_01.jpg', srct: 'demonstration/graceland/image_01ts.jpg', title: 'image 01',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_02.jpg', srct: 'demonstration/graceland/image_02ts.jpg', title: 'image 02',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_03.jpg', srct: 'demonstration/graceland/image_03ts.jpg', title: 'image 03',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_04.jpg', srct: 'demonstration/graceland/image_04ts.jpg', title: 'image 04',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_05.jpg', srct: 'demonstration/graceland/image_05ts.jpg', title: 'image 05',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_06.jpg', srct: 'demonstration/graceland/image_06ts.jpg', title: 'image 06',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_07.jpg', srct: 'demonstration/graceland/image_07ts.jpg', title: 'image 07',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_08.jpg', srct: 'demonstration/graceland/image_08ts.jpg', title: 'image 08',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_09.jpg', srct: 'demonstration/graceland/image_09ts.jpg', title: 'image 09',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_10.jpg', srct: 'demonstration/graceland/image_10ts.jpg', title: 'image 10',
+          albumID:104 },
+        { src: 'demonstration/graceland/image_11.jpg', srct: 'demonstration/graceland/image_11ts.jpg', title: 'image 11',
+          albumID:104 }
+        ];
+      
+      jQuery("#nanoGalleryMLN").nanoGallery({thumbnailWidth:120,thumbnailHeight:120,
+        items:contentGalleryMLN,
+        //paginationMaxItemsPerPage:3,
+        paginationMaxLinesPerPage:5,
+        thumbnailHoverEffect:'imageInvisible,imageScale150',
+        viewerDisplayLogo:true,
+        useTags:false,
+        locationHash:false,
+        breadcrumbAutoHideTopLevel:true,
+        maxItemsPerLine:5
+      });
+
+      jQuery("#nanoGalleryAnimation1").nanoGalleryDemo({thumbnailWidth:120, thumbnailHeight:120, itemsBaseURL:'demonstration',
+  viewerDisplayLogo:true
+      });
+
+
+    });
+</script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>Poetry and Place</h1>
+        <h2>Chicago Through the Poet's Words</h2>   
+        
+    </header>
+
+    <nav>
+        <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../search.html">Search</a></li>
+      <li><a href="../map.html">Maps</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <style>
+    #album-container {
+      width: 170px;
+      height: 170px;
+      opacity: 1;
+      top: 0px;
+      left: 0px;
+    }
+    </style>
+    <h1 class="header">Gallery</h1>
+    <div id="nanoGalleryMLN"></div>
+    <footer>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../search.html">Search</a></li>
+      <li><a href="../map.html">Maps</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="../contact.html">Contact</a></li> 
+    </ul>
+        </ul>
+                        <p>Copyright © PPC 2014. All rights reserved.</p>   
+                                    
+    </footer>
+
+</body>
+</html>

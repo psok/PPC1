@@ -70,24 +70,38 @@ td {
 #search		{
 				background-color: #4c4c4c;
 				color: #ffffff;
+				border: 2px solid #4c4c4c; 
+    			background: #4c4c4c;
+    			width: 150px;
+    			border-radius: 25px;
 				padding: 10px;
 				margin: 10px;
+				
 				
 				
 }	
 
 #welcome	{
-				
-				
+				background-color: #4c4c4c;
+				color: #ffffff;
+				border: 2px solid #4c4c4c; 
+    			background: #4c4c4c;
+    			width: 310px;
+    			border-radius: 25px;
 				padding: 10px;
 				margin: 10px;
-				
 				
 }
 
 #new		{
 				
-				
+				background-color: #4c4c4c;
+				color: #ffffff;
+				border: 2px solid #4c4c4c;
+ 				width: 310px;
+    			background: #4c4c4c;
+    			width: 200px;
+    			border-radius: 25px;
 				padding: 10px;
 				margin: 10px;
 				
